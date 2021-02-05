@@ -10,7 +10,6 @@ export default {
       let skipTags = {
         'a': 1,
         'iframe': 1,
-         'img': 1,
       };
   
       settings.excluded_tags.split('|').forEach(tag => {
@@ -32,7 +31,7 @@ export default {
       let createLink = function(text, url) {
         var link = document.createElement('a');
         link.innerHTML = text;
-//         link.href = url;
+        link.href = url;
 //         link.rel = 'nofollow';
 //         link.target = '_blank';
         link.className = 'linkify-word no-track-link';
