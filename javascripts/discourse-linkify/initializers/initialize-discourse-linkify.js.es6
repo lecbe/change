@@ -29,7 +29,7 @@ export default {
       });
       
       let createLink = function(text, url) {
-        var link = document.createElement();
+        var link = document.createElement('div');
        link.innerHTML = url;
 //        link.href = url;
 //         link.rel = 'nofollow';
