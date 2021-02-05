@@ -31,7 +31,7 @@ export default {
       let createLink = function(text, url) {
         var link = document.createElement('a');
        link.innerHTML = url;
-       link.href = url;
+//        link.href = url;
 //         link.rel = 'nofollow';
 //         link.target = '_blank';
 //         link.className = 'linkify-word no-track-link';
