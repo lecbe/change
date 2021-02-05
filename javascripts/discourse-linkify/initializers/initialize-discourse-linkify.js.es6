@@ -8,8 +8,9 @@ export default {
 
       // roughly guided by https://stackoverflow.com/questions/8949445/javascript-bookmarklet-to-replace-text-with-a-link
       let skipTags = {
-//         'a': 1,
-//         'iframe': 1,
+        'a': 1,
+        'img': 1,
+        'iframe': 1,
       };
   
       settings.excluded_tags.split('|').forEach(tag => {
@@ -29,9 +30,9 @@ export default {
       });
       
       let createLink = function(text, url) {
-        var link = document.createElement('p');
-       link.innerHTML = url;
-//        link.href = url;
+        var link = document.createElement('img');
+//        link.innerHTML = url;
+       link.src = url;
 //         link.rel = 'nofollow';
 //         link.target = '_blank';
 //         link.className = 'linkify-word no-track-link';
