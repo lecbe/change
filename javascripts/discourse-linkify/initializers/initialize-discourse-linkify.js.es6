@@ -10,6 +10,7 @@ export default {
       let skipTags = {
         'a': 1,
         'iframe': 1,
+         'img': 1,
       };
   
       settings.excluded_tags.split('|').forEach(tag => {
